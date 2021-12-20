@@ -1,45 +1,59 @@
-// class Media {
-//     constructor (visual, news) {
-//         this.mediaType1 = visual;
-//         this.mediaType2 = news;
-//     }
-//     logMedia () {
-//         return 'I like' + this.mediaType1 + 'media';
-//     }
-// }
-
-// class Book extends Media() {
-//     constructor (visualmMdia, newsMedia , xMedia) {
-//     super(visualmMdia, newsMedia);
-//     this.xMedia = xMedia;
-//     }
-
-//     read () {
-//         console.log("reading" + this.xMedia);
-//     }
-// }
-
-// const bookObj = new Book (100, 200, 5);
-// console.log(bookObj.read())
-
-class Car {
-    constructor(brand) {
-      this.carname = brand;
+class Media {
+    constructor (brodcastMedia, printMedia,socialMedia) {
+        this.brodcastMedia = brodcastMedia
+        this.printMedia = printMedia
+        this.socialMedia = socialMedia
     }
-    present() {
-      return 'I have a ' + this.carname;
+    presentBrodcast () {
+        console.log(this.brodcastMedia)
     }
-  }
-  
-  class Model extends Car {
-    constructor(brand, mod) {
-      super(brand);
-      this.model = mod;
+    presenPrint () {
+        console.log(this.printMedia)
     }
-    show() {
-      return this.present() + ', it is a ' + this.model;
+    presentSocial () {
+        console.log(this.socialMedia)
     }
-  }
-  
-  let myCar = new Model("Ford", "Mustang");
-  document.getElementById("demo").innerHTML = myCar.show();
+}
+
+class Book extends Media {
+    constructor (presenPrint,sheets) {
+        super (presenPrint,sheets);
+        this.sheets = sheets;
+       
+    }
+    presentSheets () {
+        console.log(this.sheets);
+    }
+}
+
+class Film extends Media {
+    constructor (brodcastMedia,name) {
+        super (brodcastMedia,name);
+        this.name = name;
+       
+    }
+    presentName () {
+        console.log(this.name);
+    }
+}
+
+class SocialMedia extends Media {
+    constructor (socialMedia,name) {
+        super (socialMedia,name);
+        this.name = name;
+       
+    }
+    presentName () {
+        console.log(this.name);
+    }
+}
+let book = new Book ("newspaper",100);
+let film = new Film ("cinema","flatliners")
+let socialMedia = new SocialMedia ("Androind Type","Instagram")
+console.log(socialMedia)
+console.log(film)
+console.log(book)
+
+
+
+// let media = new Media ("TV","magazine","Instagram")
