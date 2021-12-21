@@ -1,29 +1,18 @@
-function Course1(className, classUnit,classCapacity) {
+function Course(className, classUnit,classCapacity) {
     this.className = className;
     this.classUnit = classUnit;
     this.classCapacity = classCapacity;
 
-    this.softEngineeringClass = function () {
-        
-        return this.className + " " + this.classUnit + this.classCapacity
-    };
 }
 
 
-function Course2(className, classUnit,classCapacity) {
-    this.className = className;
-    this.classUnit = classUnit;
-    this.classCapacity = classCapacity;
+let software = new Course("softEngineeringClass", 3,50);
+let network = new Course("networkClass", 3,50);
 
-    this.netwokClass = function () {
-        
-        return this.className + " " + this.classUnit + this.classCapacity
-    };
-}
-let course1 = new Course1("softEngineeringClass", 3,50);
-let course2 = new Course2("networkClass", 3,50);
-console.log(course1.softEngineeringClass());
-console.log(course2.netwokClass());
+software.book = "software book"
+network.project = true;
+console.log(software)
+console.log(network)
 
 
  
