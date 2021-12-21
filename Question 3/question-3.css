@@ -15,16 +15,100 @@ body
 
  header {
      margin-top: 10%;
-     margin-right: 35%;
-     margin-left: 35%;
+     margin-left:25%;
      display: flex; 
-     align-items: center;
+     align-items:center ;
+     justify-content: flex-start;
     font-size: xx-large; 
     font-weight: bolder;
     color: whitesmoke;
-    /* margin: 30px; */
+    
  }
- .h1 {
-     display: flex;
-    margin: 200px;
+ h1 {
+     /* display: flex; */
+     color: lightskyblue;
+   
+ }
+ img {
+   margin-left:3%;
+ }
+ .child1 {
+   margin-left:7.4%;
+   margin-right: 15%;
+   display: flex;
+   /* margin-bottom: 30px; */
+  }
+  .child1 p {
+    color: lightskyblue;
+  }
+  .blackman {
+    width:180px;
+    height: 180px;
+    border-radius: 50%;
+    margin: 30px;
+    text-align: center;
+ }
+ .gradient-line {
+   background-image:linear-gradient(to right,rgb(199, 120, 16),rgb(184, 105, 184),rgb(62, 62, 208) );
+   height: 0.5px;
+   width: 70%;
+   margin-left: 15%;
+   margin-top: 5%;
+   margin-bottom: 10%;
+ }
+ .digitize_your_business {
+   text-align: center;
+   color: lightskyblue;
+ }
+ .p_under_digitize_your_business {
+  text-align: center;
+  color: lightskyblue;
+  margin-bottom:8%;
+ }
+ .child2 {
+  
+   /* margin-top: 15%; */
+   margin-left: auto;
+   margin-right: auto;
+   width:95vw;
+   height: 50vh;
+   display: flex;
+   margin:3%;
+   align-items: center;
+   justify-content: space-between;
+ }
+ 
+ .left-box {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   width: 25%;
+   height: auto;
+   /* border: 1px solid white; */
+ }
+ .p-gradiant {
+  font-size: 22px;
+  font-weight:bold;
+  background: -webkit-linear-gradient(rgb(199, 120, 16),rgb(184, 105, 184),rgb(62, 62, 208) );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+ }
+ .p-box {
+   color: lightskyblue;
+ }
+ .center-box {
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  width: 25%;
+  height:auto;
+  /* border: 1px solid white; */
+ }
+ .right-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 25%;
+  height: auto;
+  /* border: 1px solid white; */
  }
