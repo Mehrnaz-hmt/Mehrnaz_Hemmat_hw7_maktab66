@@ -125,24 +125,38 @@ body
   height: auto;
   
   }
+ 
 @media screen and (max-width:900px) {
+
+  .top-of-the-site {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hello-hand-p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .gradient-line {
+    width: 100%;
+  }
 .child2 {
   display: flex;
   flex-direction: column;
-  margin:3%;
+  margin:30px;
 }
 .left-box {
-  width:50%;
+  width:70%;
+  margin:5% ;
 
 }
 .center-box {
-  width:50%;
+  width:70%;
+  margin:5% ;
 }
 .right-box {
-  width:50%;
-  
+  width:70%;
+  margin:5% ;
 }
 } 
-@media screen (max-width:900px){
-
-}
