@@ -36,6 +36,7 @@ body
    margin-left:7.4%;
    margin-right: 15%;
    display: flex;
+   align-items: center;
    /* margin-bottom: 30px; */
   }
   .child1 p {
