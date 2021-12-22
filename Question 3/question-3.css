@@ -12,11 +12,27 @@ body
    color: #cdcdcd;
    font-family: Raleway , "Avenir Next", "Avenir", sans-serif;
  }
+ .top-of-the-site {
+   display: flex;
+   flex-direction: row;
+   margin-top: 1%;
+   margin-bottom: 2%;
+   margin-right: 13%;
+   margin-left:5%;
+  
+ }
+ .hello-hand-p {
+   display: flex;
+   flex-direction: column;
+   
+   margin-left: 3%;
+   margin-right: 3%;
+ }
 
  header {
      margin-top: 10%;
-     margin-left:25%;
      display: flex; 
+     flex-direction: row;
      align-items:center ;
      justify-content: flex-start;
     font-size: xx-large; 
@@ -25,42 +41,37 @@ body
     
  }
  h1 {
-     /* display: flex; */
      color: lightskyblue;
-   
  }
- img {
-   margin-left:3%;
- }
- .child1 {
-   margin-left:7.4%;
-   margin-right: 15%;
-   display: flex;
-   align-items: center;
-   /* margin-bottom: 30px; */
-  }
+
   .child1 p {
     color: lightskyblue;
   }
   .blackman {
-    width:180px;
-    height: 180px;
+    width:150px;
+    height: 150px;
     border-radius: 50%;
-    margin: 30px;
-    text-align: center;
+    margin-right:1%;
+   margin-top: 28%;
+  
  }
  .gradient-line {
    background-image:linear-gradient(to right,rgb(199, 120, 16),rgb(184, 105, 184),rgb(62, 62, 208) );
    height: 0.5px;
    width: 70%;
    margin-left: 15%;
-   margin-top: 5%;
-   margin-bottom: 10%;
+   margin-top:90px;
+   margin-bottom: 90px;
+   /* margin-bottom: 10%; */
+ }
+ .digitize {
+   /* margin-bottom: 13%; */
  }
  .digitize_your_business {
    text-align: center;
    color: lightskyblue;
  }
+
  .p_under_digitize_your_business {
   text-align: center;
   color: lightskyblue;
@@ -68,24 +79,25 @@ body
  }
  .child2 {
   
-   /* margin-top: 15%; */
+   /* margin-top: 35%; */
    margin-left: auto;
    margin-right: auto;
    width:95vw;
-   height: 50vh;
+   height: auto;
    display: flex;
-   margin:3%;
+   /* margin:3%; */
    align-items: center;
    justify-content: space-between;
  }
  
  .left-box {
    display: flex;
+   top: 0;
    flex-direction: column;
    align-items: flex-start;
    width: 25%;
-   height: auto;
-   /* border: 1px solid white; */
+   /* height: 90%; */
+   
  }
  .p-gradiant {
   font-size: 22px;
@@ -103,7 +115,7 @@ body
   align-items:flex-start;
   width: 25%;
   height:auto;
-  /* border: 1px solid white; */
+ 
  }
  .right-box {
   display: flex;
@@ -111,5 +123,26 @@ body
   align-items: flex-start;
   width: 25%;
   height: auto;
-  /* border: 1px solid white; */
- }
+  
+  }
+@media screen and (max-width:900px) {
+.child2 {
+  display: flex;
+  flex-direction: column;
+  margin:3%;
+}
+.left-box {
+  width:50%;
+
+}
+.center-box {
+  width:50%;
+}
+.right-box {
+  width:50%;
+  
+}
+} 
+@media screen (max-width:900px){
+
+}
