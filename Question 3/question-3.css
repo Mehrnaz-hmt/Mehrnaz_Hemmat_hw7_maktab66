@@ -183,13 +183,32 @@ body
     display: flex;
     flex-direction: column;
     align-items: center;
+  
+  }
+.hrader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-left: auto;
+  margin-right: auto; */
+  text-align: center;
+}
+  .p-under-hello-hand-p{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
   }
   .hello {
     font-size: 55px;
     display: flex;
     align-items: center;
     justify-content: center;
+   
   }
+
+
   .child2 {
     display: flex;
     flex-direction: column;
@@ -207,5 +226,10 @@ body
   .right-box {
     width:70%;
     margin:30px;
+  }
+  .gradient-line {
+    width:100%;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
