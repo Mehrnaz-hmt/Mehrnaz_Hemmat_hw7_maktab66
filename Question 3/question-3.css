@@ -12,6 +12,9 @@ body
    color: #cdcdcd;
    font-family: Raleway , "Avenir Next", "Avenir", sans-serif;
  }
+ .container {
+   border:2px white solid;
+ }
  .top-of-the-site {
    display: flex;
    flex-direction: row;
@@ -57,7 +60,7 @@ body
  }
  .gradient-line {
    background-image:linear-gradient(to right,rgb(199, 120, 16),rgb(184, 105, 184),rgb(62, 62, 208) );
-   height: 0.5px;
+   height: 2px;
    width: 70%;
    margin-left: 15%;
    margin-top:14%;
@@ -125,7 +128,12 @@ body
   height: auto;
   
   }
- 
+@media screen and (max-width:912px) {
+  .gradient-line {
+    width:100%;
+    margin-left:0;
+  }
+}
 @media screen and (max-width:900px) {
 
   .top-of-the-site {
@@ -141,7 +149,7 @@ body
   .gradient-line {
     width: 100%;
   }
-.child2 {
+/* .child2 {
   display: flex;
   flex-direction: column;
   margin:30px;
@@ -158,5 +166,33 @@ body
 .right-box {
   width:70%;
   margin:5% ;
-}
+} */
 } 
+@media screen and (max-width:768px) {
+  .hello-hand-p  {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .gradient-line {
+    width:100%;
+    margin-left: 0;
+  }
+  .child2 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .left-box {
+    width:30%;
+    margin:30px;
+  
+  }
+  .center-box {
+    width:30%;
+    margin:30px;
+  }
+  .right-box {
+    width:30%;
+    margin:30px;
+  }
+}
