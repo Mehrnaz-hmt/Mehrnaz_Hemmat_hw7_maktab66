@@ -60,13 +60,13 @@ body
    height: 0.5px;
    width: 70%;
    margin-left: 15%;
-   margin-top:90px;
-   margin-bottom: 90px;
-   /* margin-bottom: 10%; */
+   margin-top:14%;
+   margin-bottom: 20px;
+  
  }
- .digitize {
-   /* margin-bottom: 13%; */
- }
+.digitize {
+  margin-top: 18%;
+}
  .digitize_your_business {
    text-align: center;
    color: lightskyblue;
